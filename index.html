@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body
+            {
+                font-family: sans-serif;
+                margin: 0;
+                background-image: url(https://images.unsplash.com/photo-1708724195876-1156245fce21?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                background-size: cover;
+            }
+            .select_field
+            {
+                /* border: 1px solid red; */
+                padding: 6px;
+
+            }
+            .select_field select
+            {
+                padding: 2px;
+                /* background-color: red; */
+                border-radius: 3px;
+
+            }
+            .select_field button
+            {
+                padding: 10px;
+                border-radius: 8px;
+                background-color: green;
+                border: none;
+                color: white;
+                cursor:pointer;
+            }
+            .main-container
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh  ;
+            }
+            form
+            {
+                background-color: rgba(255, 255, 255, 0.507);
+                backdrop-filter: blur(40px);
+                padding-bottom: 60px;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 20px;
+                color: rgba(0, 0, 0, 0.7);
+
+            }
+            input:focus, select:focus,textarea:focus
+            {
+                outline: none;
+                border: 1px solid orange;
+                border-radius: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+        <form action="">
+            <div class="select_field">
+            <label for="course_name">Select Course</label>
+            <select id="course_name">
+                <option value="">--Select an option--</option>
+                <option value="">Web Development</option>
+                <option value="">Machine Learning</option>
+                <option value="">Artificial Intelligence</option>
+                <option value="">Cloud Computing</option>
+                <option value="">IOT</option>
+                <option value="">Android Development</option>
+            </select>
+        </div>
+            <div class="select_field">
+            <label for="instructor_name">Select Teacher
+            </label>
+            <select name="" id="instructor_name">
+                <option value="">Saurabh Shukla</option>
+                <option value="">Imran Ali Dina</option>
+                <option value="">Sanchit Sir</option>
+            </select>
+        </div>
+        <div class="select_field">
+            <label for="rating">Rate (1 to 5):</label>
+            <select name="" id="rating">
+                <option value="">Choose a value</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+        </div>
+        <div class="select_field">
+            <label for="feedback">Give your feedback</label>
+            <br>
+            <textarea name="" id="feedback"></textarea>
+        </div>
+        <div class="select_field">
+            <button type="submit">Submit Here</button>
+        </div>
+        </form>
+    </div>
+    </body>
+    </html>
